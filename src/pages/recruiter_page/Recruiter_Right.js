@@ -8,7 +8,8 @@ export default function Recruiter() {
         <Box component={'span'} mt={-4}style={{position:'relative',marginLeft:'27.8rem',width:'max-content',fontFamily:'poppins',fontSize:'3rem',}}>Company Name</Box></Stack>
         <Stack
           className='timeline-container' 
-          style={{position:'absolute',left:'60rem',top:'0.05em',}}
+          ml={{md:'60rem',sm:'11.8rem'}}
+          mt={{md:'0.5rem',sm:'25rem'}}
         >
         <MyTimeline/>
         </Stack>

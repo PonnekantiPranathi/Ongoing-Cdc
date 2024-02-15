@@ -1,7 +1,7 @@
 import React from 'react';
 import TextField from '@mui/material/TextField';
 
-function Textbox() {
+function Textbox({width, required=false, name, errors, msg, register}) {
   return (
     <div>
         <TextField
@@ -12,9 +12,16 @@ function Textbox() {
           variant="standard"
 
           sx={{
-            width:285,
+            width:{width},
             margin:'7.5px'
           }}
+
+          {...register(name, {
+            required: required ? msg:"",
+          })}
+
+          error={!!errors[name]}
+          helperText={errors[name] ? errors[name].message : ''}
         />
       
     </div>

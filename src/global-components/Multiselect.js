@@ -57,7 +57,7 @@ const MultiSelect = ({
         : {};
     return (
       <>
-        <Checkbox
+        <Checkbox 
           color="primary"
           icon={<CheckBoxOutlineBlankIcon fontSize="small" />}
           checkedIcon={<CheckBoxIcon fontSize="small" />}
@@ -70,7 +70,7 @@ const MultiSelect = ({
     );
   };
   const inputRenderer = params => (
-    <TextField {...params}  variant="outlined" style={inputStyle} label={label} placeholder={placeholder} />
+    <TextField {...params} multiline variant="outlined" style={inputStyle} label={label} placeholder={placeholder} />
   );
   const getOptionSelected = (option, anotherOption) =>
     option.value === anotherOption.value;

@@ -2,22 +2,28 @@ import React from 'react';
 import TextField from '@mui/material/TextField';
 import { blue } from '@mui/material/colors';
 
-function Textbox(props) {
+function Textbox({label,lebal, width,variant, required=false, name, errors, msg, register}) {
   return (
     <div>
         <TextField
           id="standard-search"
-          label={props.label}
-          variant="standard"
+          label={label}
+          placeholder={lebal}
+          variant={variant}
             sx={
                 {
-                    width:285,
+                    width:width,
                     color: blue,
                     margin: '7.5px'
                 }
             }
-            height={500}
-        
+  
+            {...register(name, {
+              required: required ? msg:"",
+            })}
+
+            error={!!errors[name]}
+            helperText={errors[name] ? errors[name].message : ''}
         />
       
     </div>

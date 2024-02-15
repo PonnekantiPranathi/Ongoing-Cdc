@@ -1,21 +1,22 @@
 import React from 'react';
 import {Button}  from '@mui/material';
-function ClickButton(props) {
+function ClickButton({js=false, fs, height, width, margin, value,onClick}) {
   return (
-    <div>
+    <div style={{display:'flex', justifyContent:js?'center':'none'}}>
       <Button
       variant="contained"
       sx={{
         color: "FFFFFF",
         bgcolor: "#1E53D7",
-        fontSize:props.fs,
-        height: props.height,
-        width: props.width,
-        borderRadius: "20px",
-        margin:props.margin
+        fontSize:{fs},
+        height: {height},
+        width: {width},
+        margin:{margin}
       }}
+      onClick={onClick}
+      type='submit'
     >
-      {props.value}
+      {value}
     </Button>
 
     </div>

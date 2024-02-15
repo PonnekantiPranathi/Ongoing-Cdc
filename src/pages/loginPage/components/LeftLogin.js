@@ -37,8 +37,8 @@ function LeftLogin() {
                 >
                     {/* <img src={iitgoalogo} alt="logo" srcset="" height={'50%'} width={'50%'} /> */}
                 </Box>
-                <Typography variant='h3' color={'white'} fontWeight={700} mt={{md:5, xs:2}} mb={{md:3, xs:1}} fontSize={{md:'3.5vw', xs:'2rem'}}>IIT GOA</Typography>
-                <Typography variant='h4' color={'white'} fontWeight={200} textAlign={'center'} fontSize={{md:'2.5vw', xs:'1.8rem'}}>Career Developement Cell</Typography>
+                <Typography variant='h3' color={'white'} fontWeight={700} mt={{md:5, xs:2}} mb={{md:3, xs:1}} fontSize={{md:'3.5vw', sm:'2rem', xs:'1.5rem'}}>IIT GOA</Typography>
+                <Typography variant='h4' color={'white'} fontWeight={200} textAlign={'center'} fontSize={{md:'2.5vw', sm:'1.8rem', xs:'1.3rem'}}>Career Developement Cell</Typography>
             </Stack>
 
         </Box>
